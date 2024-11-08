@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    margin:0;
+}
+
+form {
+    margin-bottom:30px;
+}
+
+table {
+    border:1px solid lightgray;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+ul, li {
+    list-style: none;
+}
+
+h4 {
+    margin:0;
+    text-align:center;
+}
+
+h5 {
+    margin:10px 0;
+}
+
+.report {
+    display:flex;
+}
+
+.reports {
+    display: flex;
+    column-gap: 30px;
+}
+
+.content {
+    width:100%;
+}
+
+.card {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px 0px #d1d1d1;
+    margin: 25px;
+}
+
+.form-group {
+    margin:10px 0;
+}
+
+.btn {
+    float:right;
+}
+
+#sidebar{
+    min-width: 10%;
+    height: 100%;
+    border-right: 1px solid gray;
+    margin-right: 25px;
+    box-shadow: 5px 0px 20px 0px lightgray;
+
+    a {
+        font-size:18px;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+}
