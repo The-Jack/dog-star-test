@@ -1,21 +1,30 @@
-Laravel 11 App inside Docker (should be able to "run php artisan serve" as well)
+Laravel 11 App inside Docker 
+
+Using
+
+Laravel 11 with Jetstream
+Inertia (but i dont like this)
+Vue3
 
 before using be sure to
 <ul>
 <li>composer i</li>
 <li>npm i</li>
 <li>npm run build</li>
-<li>php artisan migrate:fresh</li>
+<li>php artisan migrate:fresh --seed</li>
 </ul>
 
 Basic tests have been created (sorry i would have more here but new/ish to TDD).
 Access via php artisan test.
 
-Home ("/") should show a form of 5 named url inputs and a submit button with an action to "/url/submit".
-if any url is invalid redirect back.
+registration isnt possible login with 
+<ul>
+<li>test@example.com</li>
+<li>pass-for-test</li>
+</ul>
 
-App process all valid urls and presents the Top Ten Keywords then seperately All Keywords found.
-Each report is grouped for easy identification.
+Tasks ("/tasks") should show a list of seeded tasks belonging to the user above.
+there is a new task button at the top to open a vue modal with a form for creating a new task, validated with required for both fields.
+error messages on missing field data is also present on this modal.
 
-A link is provided to a Reports page (/reports) to view a list ofpreviously generated reports.
-Each report is viewable individually from here (/reports).
+tasks list has 2 buttons per task, one to mark task complete, and another to delete said task.
