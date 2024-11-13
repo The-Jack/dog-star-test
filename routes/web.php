@@ -20,7 +20,7 @@ Route::middleware([
 
 });
 
-Route::get('/tasks/list', [TaskController::class, 'list']);
-Route::post('/tasks/store', [TaskController::class, 'store']);
-Route::post('/tasks/delete', [TaskController::class, 'delete']);
-Route::post('/tasks/complete', [TaskController::class, 'update']);
+Route::get('/tasks/list', [TaskController::class, 'list'])->name('tasks.list');
+Route::post('/tasks/store', [TaskController::class, 'store'])->name('tasks.store');
+Route::post('/tasks/delete', [TaskController::class, 'delete'])->name('tasks.delete');
+Route::post('/tasks/complete', [TaskController::class, 'update'])->name('tasks.complete');
