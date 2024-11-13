@@ -11,9 +11,9 @@ class TaskController extends Controller
     public function list($ids = null): String
     {
         if ($ids) {
-            $tasks = Task::whereIn('id', $ids)->get();
+            $tasks = Task::where('owner', Auth::id())->whereIn('id', $ids)->get();
         } else {
-            $tasks = Task::orderBy('created_at','desc')->get();
+            $tasks = Task::where('owner', Auth::id())->orderBy('created_at','desc')->get();
         }
 
         return json_encode($tasks);

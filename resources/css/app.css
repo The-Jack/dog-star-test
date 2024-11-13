@@ -6,16 +6,33 @@
     display: none;
 }
 
+.form-control {
+    border-radius: .5rem;
+    width:100%;
+}
+
 .modal {
     position: fixed;
     background-color: white;
     border: 1px black solid;
     border-radius: .5rem;
     z-index: 999;
-    top: 20%;
-    left: 50%;
-    width: 600px;
-    margin-left: -300px;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+}
+@media (min-width: 1280px) {
+    .modal {
+        position: fixed;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: .5rem;
+        z-index: 999;
+        top: 20%;
+        left: 50%;
+        width: 600px;
+        margin-left: -300px;
+    }
 }
 
 .btn {
@@ -40,6 +57,3 @@
     background-color:#f00;
 }
 
-.form-control {
-    border-radius: .5rem;
-}
