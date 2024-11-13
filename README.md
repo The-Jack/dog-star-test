@@ -17,13 +17,15 @@ before using be sure to
 Basic tests have been created (sorry i would have more here but new/ish to TDD).
 Access via php artisan test.
 
-registration isnt possible login with 
+login with seeded user
 <ul>
 <li>test@example.com</li>
 <li>pass-for-test</li>
 </ul>
 
-Tasks ("/tasks") should show a list of seeded tasks belonging to the user above.
+or follow link to register
+
+Tasks ("/") should show a list of seeded tasks belonging to the logged in user.
 there is a new task button at the top to open a vue modal with a form for creating a new task, validated with required for both fields.
 error messages on missing field data is also present on this modal.
 
